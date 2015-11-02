@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AddressBook/AddressBook.h>
 
 @interface XBContact : NSObject
+
++ (ABAddressBookRef)requestAuthentication:(ABAddressBookRequestAccessCompletionHandler)completion;
++ (NSArray *)allPureContact;
 
 @end
